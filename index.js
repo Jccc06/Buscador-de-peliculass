@@ -1,4 +1,5 @@
 function maquetarPelis(peliculas){
+        let imagen;
         for(let peli of peliculas){
             contenedor = document.getElementById("contenedor");
             miDiv = document.createElement("div");       
@@ -7,7 +8,8 @@ function maquetarPelis(peliculas){
             );
             texto = document.createElement("h2");
             img = document.createElement("img");
-            
+            imagen.createElement("img");
+            imagen.onerror = (e) => e.target.src = "/img/error imagen.png";
 
             img.src = peli.Poster; 
             texto.textContent = peli.Title;
