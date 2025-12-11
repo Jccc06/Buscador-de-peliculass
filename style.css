@@ -22,9 +22,13 @@ div h2{
     font-size: 30px;
 }
 button{
-    height: 40%;
-    width: 10%;
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
 #detalle{
     overflow-x:auto;
     position: fixed;
@@ -69,7 +73,7 @@ button{
 #landing{
     border: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
 }
 

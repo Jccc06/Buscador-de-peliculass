@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CineFinder</title>
     <script src="index.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/Gemini_Generated_Image_kn3ylhkn3ylhkn3y-removebg-preview.png">
 </head>
 <body>
     <div id="buscador" style="visibility: hidden;">
         <header>
             <input type="text" placeholder="Escribe una pelicula" id="pelicula">
+            <input type="text" placeholder="Año de lanzamiento" id="Año">
+            <select name="tipo" id="tipo">
+                <option id="opcion" value="movie">peliculas</option>
+                <option id="opcion" value="series">series</option>
+                <option id="opcion" value="cualquiera">Cualquiera</option>
+            </select>
             <div id="botones">
                 <button id="botonbuscar">Buscar</button>
-                <button id="Volver">Volver</button>
+                <button id="favoritos">favoritos</button>
             </div>
         </header>
     <div id="contenedor">
@@ -22,7 +29,18 @@
     </div>
 
     <div id="landing">
-        <h3>Esta es la landing page</h3>
+        <h1>Bienvenido a CineFinder</h1>
+        <br>
+        <p> Descubre tu próxima película favorita.
+
+            Explora un catálogo infinito de historias, géneros, directores y estrenos.
+            Encuentra en segundos la película perfecta para tu noche de cine, tu maratón del fin de semana o ese clásico que siempre quisiste ver.
+
+            Todo en un buscador rápido, simple y hecho para amantes del cine.
+        </p>
+        <br>
+        <h1>¿Listo para empezar?</h1><br>
+        <p>Tu próxima película te está esperando.</p><br>
         <button id="botonLanding">Ir al busador</button>
     </div>
 </body>
